@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class movie{
+            constructor(title, studio, rating='PG'){
+                this.title = title;
+                this.studio = studio;
+                this.rating = rating;
+            }
+            getpg(){
+                if(this.rating == 'PG'){
+                    return(`Title: ${this.title}, Studio: ${this.studio}, Rating: ${this.rating} `);
+                }
+                else{
+                    return ("Rating Not PG");
+                }
+            }
+        }
+        
+        const film = new movie("Jalier","Zee",4.5);
+        const film1 = new movie("Leo","Star");
+        const film2 = new movie("Iraivan","Sun");
+        const film3 = new movie("Casino Royale","Eon Productions","PG­13");
+        console.log(film.getpg())
+        console.log(film1.getpg())
+        console.log(film2.getpg())
+        console.log(film3.getpg())
+        // console.log(film);
+        // console.log(film1);
+        // console.log(film2);
+        // console.log(film3);
+</script>
+</body>
+</html>
